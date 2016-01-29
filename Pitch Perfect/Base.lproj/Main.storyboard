@@ -112,14 +112,32 @@
                                     <action selector="stopAudio:" destination="CHc-YQ-pQA" eventType="touchUpInside" id="QMV-h9-BQX"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jgN-vo-yN4">
+                                <rect key="frame" x="45" y="284" width="100" height="100"/>
+                                <state key="normal" image="chipmunk"/>
+                                <connections>
+                                    <action selector="playChipmunkAudio:" destination="CHc-YQ-pQA" eventType="touchUpInside" id="aYH-z5-aA0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tMJ-bd-kAs">
+                                <rect key="frame" x="455" y="284" width="100" height="100"/>
+                                <state key="normal" image="darthvader"/>
+                                <connections>
+                                    <action selector="playDarthvaderAudio:" destination="CHc-YQ-pQA" eventType="touchUpInside" id="reM-TS-w3X"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="jgN-vo-yN4" firstAttribute="leading" secondItem="F0S-mj-1LD" secondAttribute="leadingMargin" constant="25" id="0uJ-fo-QEi"/>
                             <constraint firstItem="hRZ-uh-y3M" firstAttribute="top" secondItem="jaV-gT-Dnv" secondAttribute="bottom" constant="50" id="5dp-1e-aEe"/>
+                            <constraint firstItem="tMJ-bd-kAs" firstAttribute="top" secondItem="hRZ-uh-y3M" secondAttribute="bottom" constant="70" id="I1r-1Y-thh"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hRZ-uh-y3M" secondAttribute="trailing" constant="25" id="N89-BZ-Isb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="tMJ-bd-kAs" secondAttribute="trailing" constant="25" id="SkS-GA-eDw"/>
                             <constraint firstItem="tL4-bw-jtA" firstAttribute="top" secondItem="jaV-gT-Dnv" secondAttribute="bottom" constant="50" id="dc5-fz-GEo"/>
                             <constraint firstItem="SJO-if-Itx" firstAttribute="top" secondItem="fjF-xU-U1V" secondAttribute="bottom" constant="20" id="dtF-fh-HtD"/>
                             <constraint firstItem="fjF-xU-U1V" firstAttribute="centerX" secondItem="F0S-mj-1LD" secondAttribute="centerX" id="fD4-Xq-ruX"/>
+                            <constraint firstItem="jgN-vo-yN4" firstAttribute="top" secondItem="tL4-bw-jtA" secondAttribute="bottom" constant="70" id="gfn-BI-rfb"/>
                             <constraint firstItem="tL4-bw-jtA" firstAttribute="leading" secondItem="F0S-mj-1LD" secondAttribute="leadingMargin" constant="25" id="m7b-N4-oaz"/>
                         </constraints>
                     </view>
@@ -130,6 +148,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="chipmunk" width="100" height="100"/>
+        <image name="darthvader" width="100" height="100"/>
         <image name="microphone-png" width="100" height="100"/>
         <image name="rabbit" width="100" height="100"/>
         <image name="snail" width="100" height="100"/>
